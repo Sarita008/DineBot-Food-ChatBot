@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  height: auto; 
+  background-color: #f5f5f5;
+  flex-wrap: wrap; 
+}
+
+/* Text Container (aligned left) */
+.sale-text-container {
+  max-width: 50%;
+}
+
+.sale-text-container h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 70px;
+  font-weight: bold;
+  color: #333;
+}
+
+.sale-text-container p {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
+}
+
+.sale-text-container .highlight-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(162, 202, 113);
+}
+
+.sale-text-container h2 {
+  font-family: 'open sans', serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
+}
+
+.sale-text-container .discount-text {
+  font-family: 'open sans', serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(162, 202, 113);
+}
+
+.sale-shop-btn {
+  font-family: 'open sans', serif;
+  font-size: 22px;
+  padding: 15px 30px;
+  background-color: rgb(190, 220, 116);
+  color: white;
+  border: none;
+  border-radius: 30em;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.sale-shop-btn:hover {
+  background-color: rgb(246, 233, 107);
+}
+
+/* Image Container (aligned right) */
+.sale-image-container img {
+  width: 35vw; 
+  max-height: 60vh; 
+  padding: 0;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .banner-container {
+    flex-direction: column;
+    text-align: center;
+    height: auto; 
+  }
+
+  .sale-text-container, .sale-image-container {
+    max-width: 100%;
+  }
+
+  .sale-text-container h1, .sale-text-container p, .sale-text-container h2 {
+    font-size: 2.5rem;
+  }
+
+  .sale-shop-btn {
+    font-size: 1.2rem;
+  }
+
+  .sale-image-container img {
+    width: 50%; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sale-text-container h1, .sale-text-container p, .sale-text-container h2 {
+    font-size: 2rem; 
+  }
+
+  .sale-shop-btn {
+    font-size: 1rem;
+  }
+
+  .sale-image-container img {
+    width: 70%; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner-container {
+    padding: 20px; 
+  }
+
+  .sale-text-container h1, .sale-text-container p, .sale-text-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .sale-shop-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .sale-image-container img {
+    width: 90%; 
+    margin: 20px 0; 
+  }
+}

@@ -1,0 +1,43 @@
+.carousel-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden;
+}
+
+.carousel-image {
+    width: 100%; 
+    height: auto; 
+    max-height: 500px; 
+    object-fit: cover;
+}
+
+/* Slick CSS overrides */
+.slick-slide {
+    margin: 0; /* No margin to prevent overflow */
+    overflow: hidden; 
+    display: flex; /* Ensure proper alignment */
+    justify-content: center; /* Center align */
+}
+.slick-dots {
+    bottom: 10px; /* Position of dots */
+}
+
+
+/* -----------Responsive adjustments--------- */
+@media (max-width: 1024px) {
+    .carousel-image {
+        max-height: 200px; /* Adjust max height for medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .carousel-image {
+        max-height: 150px; /* Adjust max height for small screens */
+    }
+}

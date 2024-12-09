@@ -1,0 +1,142 @@
+/* Container */
+.style-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5em;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Image Section */
+.image-container {
+  width: 60%;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Text Section */
+.text-container {
+  flex: 1;
+  padding-left: 4em;
+}
+
+.since-years {
+  font-family: 'open sans', serif;
+  font-size: 18px;
+  font-weight: bold;
+  color:  #666;
+  line-height: 30px;
+}
+
+.headingss {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #333; 
+
+}
+
+.brand-name {
+  color: rgb(162, 202, 113);
+}
+
+.description {
+  font-family: 'open sans', serif;
+  font-size: 20px;
+  color: #666;
+  margin: 15px 0;
+  line-height: 22px;
+}
+
+.know-more-btn {
+  background-color: #f26522;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .style-container {
+    padding: 3em;
+  }
+  
+  .text-container {
+    padding-left: 2em;
+  }
+
+  .headingss {
+    font-size: 2em;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .know-more-btn {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .style-container {
+    flex-direction: column;
+    padding: 2em;
+    text-align: center; /* Center text for better mobile display */
+  }
+
+  .image-container {
+    width: 100%; /* Full width for the image on mobile */
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .text-container {
+    padding-left: 0;
+  }
+
+  .headingss {
+    font-size: 1.8em; /* Slightly smaller font for mobile */
+  }
+
+  .description {
+    font-size: 14px; /* Smaller description font for readability */
+  }
+
+  .know-more-btn {
+    font-size: 14px;
+    padding: 8px 16px; /* Adjust button size */
+  }
+}
+
+@media (max-width: 480px) {
+  .style-container {
+    padding: 1.5em;
+  }
+
+  .image-container {
+    width: 100%; /* Image takes full width */
+  }
+
+  .headingss {
+    font-size: 1.5em; /* Smaller heading font */
+  }
+
+  .description {
+    font-size: 13px; /* Smaller text for mobile screens */
+  }
+
+  .know-more-btn {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}

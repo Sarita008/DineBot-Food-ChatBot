@@ -1,0 +1,385 @@
+.shop-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.search-item {
+    color: black;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.search-buttons {
+    height: 8vh;
+    width: 17vw;
+    font-size: 15px;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: rgb(190, 220, 116);
+    color: white;
+    border: none;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.has-dropdown {
+    position: relative;
+}
+
+.search-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: black;
+    min-width: 200px;
+    border: 1px solid #ddd;
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.has-dropdown:hover .search-dropdown {
+    display: flex;
+}
+
+/* Search Bar */
+.shop-content2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.search-bar input {
+    font-size: 16px;
+    background-color: #f8f8f8;
+    padding-left: 20px;
+    border-radius: 20px;
+    height: 6vh;
+    width: 35vw;
+    border: none;
+}
+
+/* ICON */
+.shop-content3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.shop-icon {
+    font-size: 70px;
+    color: rgb(190, 220, 116);
+    padding-top: 10px;
+}
+
+/* CATEGORIES */
+.shop-main {
+    width: 100%;
+    display: flex;
+}
+
+.shop-categories {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5em;
+}
+
+.shop-heading h3 {
+    font-size: 1.4em;
+}
+
+.shop-main-links {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.shop-main-links button {
+    background: none;
+    border: none;
+    color: #777;
+    font-size: 1em;
+}
+
+.shop-rating h3 {
+    font-size: 1.4em;
+    padding-top: 30px;
+}
+
+.shop-icons-rx a {
+    display: flex;
+    color: #f8a231;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.shop-img img {
+    width: 80%;
+    height: 100%;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+/* -------------IMAGES--------------- */
+/* SEARCH KEYWORD */
+.main-container-rx {
+    margin-right: 30px;
+}
+
+.shop-description-rx {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-keyword {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.shop-search-bar input {
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.285);
+    border-radius: 4px;
+    height: 6vh;
+    width: 15vw;
+    padding-left: 10px;
+    outline: none;
+}
+
+/* NEW ARRIVALS */
+.sub-division {
+    display: flex;
+    justify-content: space-between;
+    width: 5.5vw;
+}
+
+.buttons-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.285);
+    border-radius: 4px;
+    padding: 0 20px 0 20px;
+    width: 60vw;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.new-item {
+    width: 130px;
+    border: none;
+    background-color: #f8f8f89c;
+    color: black;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.new-item:hover {
+    color: #699c47;
+}
+
+.new-arrivals {
+    width: 100%;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f8f8f89c;
+    border: none;
+    padding: 15px;
+}
+
+.has-dropdowns {
+    position: relative;
+}
+
+.new-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.has-dropdowns:hover .new-dropdown {
+    display: flex;
+}
+
+/* PRODUCTS */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-cardxx {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.productss-imagexx {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 10px;
+    background-color: rgba(128, 128, 128, 0.326);
+}
+
+.product-detailsxx {
+    text-align: center;
+}
+
+.list-view .product-cardxx {
+    display: flex;
+    align-items: center;
+}
+
+.list-view .productss-imagexx {
+    margin-right: 20px;
+}
+
+.list-view .product-detailsxx {
+    flex: 1;
+    text-align: left;
+}
+
+.action-buttonsx {
+    margin-top: 10px;
+}
+
+.products-icon-rrx {
+    font-size: 30px;
+    color: #699c47;
+    margin-left: 10px;
+}
+
+.products-icon-rrx:hover {
+    color: #e66d6d;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .shop-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shop-categories {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .grid-view {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .search-bar input {
+        width: 60vw;
+    }
+
+    .search-buttons {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .search-bar input {
+        width: 80vw;
+        height: 5vh;
+    }
+
+    .search-buttons {
+        width: 80vw;
+        height: 7vh;
+        font-size: 14px;
+    }
+
+    .shop-heading h3 {
+        font-size: 1.2em;
+    }
+
+    .shop-main-links button {
+        font-size: 0.9em;
+    }
+
+    .product-cardxx {
+        padding: 15px;
+    }
+
+    .productss-imagexx {
+        width: 120px;
+        height: 120px;
+    }
+
+    .sub-division {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .new-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .grid-view {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .shop-content2 {
+        width: 90%;
+    }
+
+    .search-bar input {
+        width: 90%;
+    }
+
+    .shop-icon {
+        font-size: 50px;
+    }
+
+    .shop-main-links {
+        align-items: center;
+    }
+
+    .grid-view {
+        grid-template-columns: 1fr;
+    }
+
+    .new-item {
+        width: auto;
+    }
+}

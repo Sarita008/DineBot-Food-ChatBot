@@ -1,0 +1,120 @@
+.product-container {
+    width: 100%;
+    padding: 7em;
+    text-align: center;
+}
+
+.product-header {
+    margin-bottom: 40px;
+}
+  
+.product-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(162, 202, 113);
+}
+  
+.product-header p {
+    font-family: 'open sans', serif;
+    font-size: 22px;
+    color: #666;
+    line-height: 50px;
+}
+  
+/* Cards grid layout */
+.product-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+  
+/* Individual card styling */
+.product-card {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    width: 90%;
+    min-width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+  
+.product-card:hover {
+    transform: scale(1.05);
+}
+  
+.product-card-image {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+  
+.product-card h2 {
+    font-family: 'open sans', serif;
+    font-size: 22px;
+    color: #333;
+    line-height: 30px;
+}
+  
+.product-card p {
+    font-family: 'open sans', serif;
+    font-size: 20px;
+    color: #777;
+}
+  
+.product-prices {
+    font-family: 'open sans', serif;
+    font-size: 20px;
+}
+  
+  /* Button styling */
+.product-add-to-cart {
+    font-family: 'open sans', serif;
+    font-size: 18px;
+    background-color: rgb(190, 220, 116);
+    color: #fff;
+    border: none;
+    padding: 15px 30px 15px 30px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+} 
+  
+.product-add-to-cart:hover {
+    background-color: #F6E96B;
+}
+  
+  /* Responsive Design */
+@media (max-width: 480px) {
+  /* Individual card styling for mobile */
+  .product-card {
+      width: 100%; /* Full width of the mobile screen */
+      padding: 10px; /* Reduced padding */
+  }
+
+  .product-card-image {
+      width: 100%;
+      height: auto; /* Maintain aspect ratio */
+      max-height: 250px; /* Limit the height on smaller screens */
+      border-radius: 10px; /* Keep the rounded corners */
+  }
+
+  .product-add-to-cart {
+      font-size: 0.9rem; /* Slightly smaller font for mobile */
+      padding: 8px 16px; /* Adjust padding for smaller buttons */
+      margin-top: 10px; /* Adjust margin for consistency */
+  }
+  
+  /* Reducing spacing between cards */
+  .product-card-grid {
+      gap: 15px; /* Slightly smaller gap between cards */
+  }
+}

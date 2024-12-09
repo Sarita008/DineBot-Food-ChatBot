@@ -1,0 +1,100 @@
+/* Container styles */
+.dine-dash-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding-left: 40px; 
+    align-items: center;
+    margin: 5em 0 5em 0;
+
+  }
+  
+  .info-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.826);
+    padding-bottom: 20px;
+  }
+  .heading span {
+    color: rgb(162, 202, 113);
+  }
+  
+  /* Row layout */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 4em;
+    margin-bottom: 3.5rem;
+  }
+  
+  /* Icon and content styles */
+  .info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the icon within the circle */
+    width: 100px;
+    height: 60px; 
+    border: 2px dotted rgb(190, 220, 116);
+    border-radius: 50%;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    color: rgb(190, 220, 116);
+    text-align: center;
+  }
+  
+  .info-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .info-content p {
+    font-family: 'open sans', serif;
+    font-size: 20px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  /* Image container */
+  .Dine-image-container {
+    text-align: right;
+    padding-right: 5em;
+  }
+  
+  .Dine-responsive-image {
+    width: 80%;
+    height: 300px;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dine-dash-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .Dine-image-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .info-item {
+      justify-content: center;
+    }
+  }
+  
